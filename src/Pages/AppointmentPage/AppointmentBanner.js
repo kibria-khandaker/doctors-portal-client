@@ -4,14 +4,14 @@ import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
 import chairBanner from '../../assets/images/chair.png';
 
-const AppointmentBanner = ({date, setDate}) => {
+const AppointmentBanner = ({ date, setDate }) => {
 
     // eita doc theke neoya but j-vai aro easy vabe koreche --
     let dateFooter = <p>Please pick a day.</p>;
     if (date) {
-        dateFooter= <p>You picked :- {format(date, 'PP')}.</p>;
+        dateFooter = <p>You picked :- {format(date, 'PP')}.</p>;
     }
-    //--
+    //-- ---
 
     return (
         <div className="hero  min-h-screen bg-white/[0.9] bg-center bg-no-repeat bg-cover" style={{
