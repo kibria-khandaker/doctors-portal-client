@@ -1,12 +1,16 @@
 import React from 'react';
 import chairBanner from '../../assets/images/chair.png';
+import chairBannerBg from '../../assets/images/bg.png';
 import BtnGradient from '../Shared/BtnGradient';
 
 const Banner = () => {
     return (
-        <div className="hero  min-h-screen bg-white/[0.9] bg-center bg-no-repeat bg-cover" style={{
-            backgroundImage: `url('${chairBanner}')`,
-            backgroundBlendMode: 'overlay'
+        <div className="hero  min-h-screen bg-white/[0.9]" style={{
+            backgroundImage: `url('${chairBannerBg}')`,
+            backgroundPosition:'center',
+            backgroundSize:'cover',
+            backgroundRepeat:'no-repeat',
+            // backgroundBlendMode: 'overlay'
         }}  >
             <div className="hero-content flex-col lg:flex-row-reverse ">
                 <img src={chairBanner} className="w-2/4 rounded-lg shadow-2xl" alt='chairImage' />

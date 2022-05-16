@@ -2,7 +2,7 @@ import React from 'react';
 import footerImg from '../../assets/images/footer.png';
 const Footer = () => {
     return (
-        <footer className="p-10  bg-center bg-no-repeat bg-cover" style={{
+        <footer className="p-10 pt-48  bg-center bg-no-repeat bg-cover" style={{
             backgroundImage: `url('${footerImg}')`,
             backgroundBlendMode: 'overlay'
         }}>
